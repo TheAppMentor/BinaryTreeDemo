@@ -6,7 +6,7 @@
 A binary search tree is a basic data structure that is used to organize and retrieve data.
 Here is an illustration of a binary tree.
 
-![Alt text](./Group 3@3x.png)
+![Binary Tree](./images/BTree_Example@3x.png)
 
 ### Properties of Binary Trees
 - Nodes at left have lower values.
