@@ -16,7 +16,7 @@ Here is an illustration of a binary tree.
 ### Node
 The building block of a binary tree is a node. Typically many nodes combine together to form a binary tree.  Each node has a maximum of two child nodes and only one parent node (Except the root node). The root node does not have a parent node.
 
-![Alt text](./Group 4@3x.png)
+![Binary Tree Node](./images/BTree_Node@3x.png)
 
 Lets take a closer look at a node.
 
@@ -230,7 +230,7 @@ playerBTree.insertNode(inputNode: BTNode(key: 69, value: "Hill, Rashod"))
 
 After the insert we expect our tree to look like this. It is difficult to visualize what the generated tree looks like. The code below enables each node to print out its structure. 
 
-![Alt text](./Final_Generated_Tree@2x.png)
+![Alt text](./images/Final_Generated_Tree@2x.png)
 
 Make the `BTNode` adopt to the `CustomStringConvertible` protocol.
 
@@ -294,7 +294,7 @@ nil 	   nil
 ===================== */
 ```
 
-![Alt text](./Final_Successful_Search@2x.png)
+![Alt text](./images/Final_Successful_Search@2x.png)
 
 ```swift
 let badNode = playerBTree.find(99)
@@ -303,7 +303,7 @@ print(badNode ?? "Node Not found")
 /* Output : Node Not found */
 ```
 
-![Alt text](./Final_Unsuccessful_Search@2x.png)
+![Alt text](./images/Final_Unsuccessful_Search@2x.png)
 
 ### Conclusion
 This post discussed how to create a binary tree, insert nodes and find a node in the tree. For most use cases, binary trees are used to quickly search and find data elements.
