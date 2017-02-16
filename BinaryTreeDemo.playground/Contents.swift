@@ -30,7 +30,7 @@ class BTNode:CustomStringConvertible {
     }
     
     var description: String {
-        return "\n===========================\n\t\t\(self.key) \n\t ⋰  ⋱  \n   \(leftChildNode?.key ?? -1) \t  \(rightChildNode?.key ?? -1)   \n\n \n\t\t\(self.value) \n\t  \n   \(leftChildNode?.value ?? "nil") \t  \(rightChildNode?.value ?? "nil") \n==========================="
+        return "\n===========================\n\t\t\(key) \n\t ⋰  ⋱  \n   \(leftChildNode?.key ?? -1) \t  \(rightChildNode?.key ?? -1)   \n\n \n\t\t\(value) \n\t  \n   \(leftChildNode?.value ?? "nil") \t  \(rightChildNode?.value ?? "nil") \n==========================="
     }
 }
 
@@ -100,7 +100,6 @@ class BTree{
         rootNode?.parentNode = nil
         rootNode?.leftChildNode = nil
         rootNode?.rightChildNode = nil
-        
     }
     
     //MARK: Searching
@@ -171,7 +170,12 @@ playerBTree.insertNode(inputNode: BTNode(key: 69, value: "Hill, Rashod"))
 
 let resultNode = playerBTree.find(14)
 print(resultNode ?? "Node Not found")
+print(resultNode?.leftChildNode!)
+print(resultNode?.rightChildNode!)
 
+let sixTree = playerBTree.find(6)
+print(sixTree)
+print(sixTree?.parentNode!)
 
 let badNode = playerBTree.find(99)
 print(badNode ?? "Node Not found")
